@@ -19,3 +19,8 @@ print(clist)
 # writing in one line
 vlist2 = [letter for letter in phrase if letter in vowels]
 print(vlist2)
+
+# working with sets
+# set of vowels not repeating
+setv2 = {letter for letter in phrase if letter in vowels}
+print(setv2, '<<<<<<<<< set v2')
