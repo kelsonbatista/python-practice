@@ -9,3 +9,19 @@
 var = set()
 var.add("Josh Smith")
 print(var)
+
+permissions = {"member", "group"}
+# permissions.add("root")
+# print(permissions)
+
+# permissions.add("member")
+# print(permissions)
+
+# permissions.union({"user"})
+# print(permissions)
+
+permissions.intersection({"user", "member"})
+print(permissions)
+
+# permissions.difference({"user"})
+# print(permissions)
