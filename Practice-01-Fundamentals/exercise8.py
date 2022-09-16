@@ -1,7 +1,7 @@
 info = {
-  "personagem": "Margarida",
-  "origem": "Pato Donald",
-  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+    "personagem": "Margarida",
+    "origem": "Pato Donald",
+    "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
 }
 
 # Exercício 8: Insira no objeto uma nova propriedade com o

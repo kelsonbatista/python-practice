@@ -4,7 +4,7 @@ trybe_course = ["Introdução", "Front-end", "Back-end"]
 
 trybe_course.append("Computer Science")
 
-print(trybe_course, '<<<<<<')
+print(trybe_course, "<<<<<<")
 
 # Exercício 6: Acesse e altere o primeiro elemento da lista para "Fundamentos".
 

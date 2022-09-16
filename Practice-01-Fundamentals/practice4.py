@@ -3,10 +3,11 @@
 # para ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"],
 # o retorno deve ser "Fernanda".
 
+
 def names(list):
     new_name = list[0]
     for name in list:
-        if (len(name) > len(new_name)):
+        if len(name) > len(new_name):
             new_name = name
     return new_name
 

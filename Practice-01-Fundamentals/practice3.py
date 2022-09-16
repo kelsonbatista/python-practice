@@ -2,10 +2,11 @@
 # tal que n > 1, imprima na tela um quadrado feito de asteriscos
 # de lado de tamanho n.
 
+
 def square(n):
     if n > 1:
         for row in range(n):
-            print(n * '*')
+            print(n * "*")
 
 
 square(5)

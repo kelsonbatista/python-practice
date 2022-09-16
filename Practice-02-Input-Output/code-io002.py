@@ -10,8 +10,8 @@
 # embutido no tipo str, pode ser utilizado para verificar se a string
 # corresponde a um número natural.
 
-numbers = input('Type the numbers list: ')
-numArr = numbers.split(' ')
+numbers = input("Type the numbers list: ")
+numArr = numbers.split(" ")
 sum = 0
 
 for number in numArr:
@@ -19,4 +19,4 @@ for number in numArr:
         sum += int(number)
     else:
         print(f'Erro ao somar valores, "{number}" é um valor inválido')
-print(f'A soma dos valores é {sum}')
+print(f"A soma dos valores é {sum}")

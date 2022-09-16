@@ -9,6 +9,6 @@ output = open("students-output.txt", mode="w")
 for line in file:
     if int(line.split()[1]) < 6:
         print(line.split()[0])
-        output.writelines(f'{line.split()[0]}\n')
+        output.writelines(f"{line.split()[0]}\n")
 file.close()
 output.close()

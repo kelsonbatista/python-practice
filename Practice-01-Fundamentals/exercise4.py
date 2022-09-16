@@ -14,4 +14,4 @@ price = p * (1 - d)
 logistics = tf + ((books - 1) * tu)
 
 total = books * (price + logistics)
-print('R$', total, '<<<<<< total')
+print("R$", total, "<<<<<< total")

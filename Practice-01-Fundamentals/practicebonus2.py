@@ -3,11 +3,12 @@
 # asteriscos de base. Por exemplo, para n = 5 o triângulo terá
 # 5 asteriscos na base:
 
+
 def triangle(n):
     count = 0
     for row in range(n):
         count += 1
-        print(count * '*')
+        print(count * "*")
 
 
 triangle(5)

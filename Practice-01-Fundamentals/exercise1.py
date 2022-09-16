@@ -8,12 +8,12 @@
 a = 20
 b = 5
 
-print(a + b, '<<<< a + b')
-print(a - b, '<<<< a - b')
-print(a / b, '<<<< a / b')
-print(a * b, '<<<< a * b')
+print(a + b, "<<<< a + b")
+print(a - b, "<<<< a - b")
+print(a / b, "<<<< a / b")
+print(a * b, "<<<< a * b")
 # shows the rest of division
-print(a % b, '<<<< a % b - rest of division')
+print(a % b, "<<<< a % b - rest of division")
 # shows the integer of division
-print(a // b, '<<<< a // b - integer of division')
-print(a ** b, '<<<< a ^ b')
+print(a // b, "<<<< a // b - integer of division")
+print(a**b, "<<<< a ^ b")

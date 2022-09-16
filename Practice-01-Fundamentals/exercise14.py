@@ -4,8 +4,8 @@
 ratings = [6, 8, 5, 9, 10]
 
 new_ratings2 = [10 * rating for rating in ratings]
-print(new_ratings2, '<<<< new_ratings 2')
+print(new_ratings2, "<<<< new_ratings 2")
 
 for value in new_ratings2:
-    if (value % 3 == 0):
-        print(f'{value} <<<< multiplo de 3')
+    if value % 3 == 0:
+        print(f"{value} <<<< multiplo de 3")

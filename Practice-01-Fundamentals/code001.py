@@ -23,4 +23,4 @@ print(vlist2)
 # working with sets
 # set of vowels not repeating
 setv2 = {letter for letter in phrase if letter in vowels}
-print(setv2, '<<<<<<<<< set v2')
+print(setv2, "<<<<<<<<< set v2")

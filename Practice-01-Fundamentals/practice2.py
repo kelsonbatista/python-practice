@@ -1,5 +1,6 @@
 # Exercício 2: Calcule a média aritmética dos valores contidos em uma lista.
 
+
 def average(list):
     numbers = 0
     for number in list:

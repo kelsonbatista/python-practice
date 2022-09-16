@@ -2,4 +2,4 @@
 
 name = input("Type a name:")
 for letter in name:
-  print(f'{letter}')
+    print(f"{letter}")

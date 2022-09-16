@@ -6,7 +6,7 @@
 number = 5
 result = 1
 
-while (number > 0):
+while number > 0:
     result *= number
     number = number - 1
 print(result)

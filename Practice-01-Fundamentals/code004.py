@@ -14,14 +14,14 @@ for x in range(10000):
 # shows a dictionary and the first element is the number list
 # the second is number quantity that repeats
 counter = Counter(numbers_list)
-print(counter, '<<<<<<< counter')
-print(counter[0], '<<<<<<< quantity of zeros')
+print(counter, "<<<<<<< counter")
+print(counter[0], "<<<<<<< quantity of zeros")
 
 # get the most frequent number
 # shows a list of tuples , most frequent numbers ordered
 mc = counter.most_common()
-print(mc, '<<<<<<< most commons')
+print(mc, "<<<<<<< most commons")
 
 # destructure
 element, quantity = mc[0]
-print(element, quantity, '<<<<<< element')
+print(element, quantity, "<<<<<< element")
