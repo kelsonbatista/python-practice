@@ -42,5 +42,5 @@ class SvgAdapter(PngInterface):
         print(f"Drawing {self.svg.get_image()}")
 
 
-image = SvgAdapter('./sample.png')
+image = SvgAdapter(SvgImage('./sample.png'))
 image.draw()
