@@ -18,25 +18,25 @@ class OrcamentoStrategy(ABC):  # Interface
 class ISSStrategy(OrcamentoStrategy):
     @classmethod
     def calcular(cls, valor):
-        return valor * 0.1
+        return f"ISS: {valor * 0.1}"
 
 
 class ICMSStrategy(OrcamentoStrategy):
     @classmethod
     def calcular(cls, valor):
-        return valor * 0.06
+        return f"ICMS: {valor * 0.06}"
 
 
 class PISStrategy(OrcamentoStrategy):
     @classmethod
     def calcular(cls, valor):
-        return valor * 0.0065
+        return f"PIS: {valor * 0.0065}"
 
 
 class CONFINSStrategy(OrcamentoStrategy):
     @classmethod
     def calcular(cls, valor):
-        return valor * 0.03
+        return f"CONFINS: {valor * 0.03}"
 
 
 class Orcamento:
@@ -48,10 +48,10 @@ class Orcamento:
 
 
 orcamento = Orcamento(1000)
-print(f"ISS: {orcamento.calcular_imposto(ISSStrategy)}")
-print(f"ICMS: {orcamento.calcular_imposto(ICMSStrategy)}")
-print(f"PIS: {orcamento.calcular_imposto(PISStrategy)}")
-print(f"CONFINS: {orcamento.calcular_imposto(CONFINSStrategy)}")
+print(orcamento.calcular_imposto(ISSStrategy))
+print(orcamento.calcular_imposto(ICMSStrategy))
+print(orcamento.calcular_imposto(PISStrategy))
+print(orcamento.calcular_imposto(CONFINSStrategy))
 
 
 # class Orcamento:
