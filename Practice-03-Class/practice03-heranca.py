@@ -42,8 +42,7 @@ class Eletrodomestico:
           Cor: {self.__cor}
           Potência: {self.__potencia}
           Voltagem: {self.__voltagem}
-          Preço: {self.__preco}
-        """
+          Preço: {self.__preco}"""
 
 
 class Microondas(Eletrodomestico):  # Exemplo de Herança
@@ -52,10 +51,10 @@ class Microondas(Eletrodomestico):  # Exemplo de Herança
         super().__init__(cor, potencia, voltagem, preco)
         self.litros = litros
 
-        def __str__(self):
-            return f"""
-              Litros: {self.litros}
-            """
+    def __str__(self):
+        return f"""
+          {super().__str__()}
+          Litros: {self.litros}"""
 
 
 class Batedeira(Eletrodomestico):  # Exemplo de Herança
