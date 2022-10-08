@@ -6,15 +6,19 @@ def multiply1(array1, test):
     entry = len(array1)
     result = []
     iterations = 0
+    hundred = ''
 
     for number1 in array1:
         result.append(number1 * number1)
         iterations += 1
+        if iterations == 100 and test == 3:
+            hundred = f'n100 - Tempo: {((time.time() * 1000) - start)}'
 
     end = time.time() * 1000
     print(f'Teste [x1] {test} - Entrada {entry} - {iterations} iterações \
     - Tempo de execução: {round(end - start, 8)} ms \
     - 1 iteração - {round((end - start) / iterations, 8)} ms')
+    print('>>>>>>>>>>> ' + hundred)
     return result
 
 
@@ -23,16 +27,20 @@ def multiply2(array1, array2, test):
     entry = len(array1)
     result = []
     iterations = 0
+    hundred = ''
 
     for number1 in array1:
         for number2 in array2:
             result.append(number1 * number2)
             iterations += 1
+            if iterations == 100 and test == 3:
+                hundred = f'n100 - Tempo: {((time.time() * 1000) - start)}'
 
     end = time.time() * 1000
     print(f'Teste [x2] {test} - Entrada {entry} - {iterations} iterações \
     - Tempo de execução: {round(end - start, 8)} ms \
     - 1 iteração - {round((end - start) / iterations, 8)} ms')
+    print('>>>>>>>>>>> ' + hundred)
     return result
 
 
@@ -41,17 +49,21 @@ def multiply3(array1, array2, array3, test):
     entry = len(array1)
     result = []
     iterations = 0
+    hundred = ''
 
     for number1 in array1:
         for number2 in array2:
             for number3 in array3:
                 result.append(number1 * number2 * number3)
                 iterations += 1
+                if iterations == 100 and test == 3:
+                    hundred = f'n100 - Tempo: {((time.time() * 1000) - start)}'
 
     end = time.time() * 1000
     print(f'Teste [x3] {test} - Entrada {entry} - {iterations} iterações \
     - Tempo de execução: {round(end - start, 8)} ms \
     - 1 iteração - {round((end - start) / iterations, 8)} ms')
+    print('>>>>>>>>>>> ' + hundred)
     return result
 
 
