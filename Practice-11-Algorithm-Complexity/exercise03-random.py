@@ -8,13 +8,11 @@ import random
 
 
 def generate_random_average(n):
-    count = 0
     array = []
-    while (count < 100):
+    for _ in range(100):
         sum = 0
         for i in range(n):
             sum += random.randint(0, 100)
-        count += 1
         array.append(sum // n)
     return (array, len(array))
 
