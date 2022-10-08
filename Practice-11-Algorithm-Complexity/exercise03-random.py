@@ -12,7 +12,7 @@ def generate_random_average(n):
     for _ in range(100):
         sum = 0
         for i in range(n):
-            sum += random.randint(0, 100)
+            sum += random.randint(0, n)
         array.append(sum // n)
     return (array, len(array))
 
@@ -34,3 +34,8 @@ def randomAverages(n):
 
 
 print(randomAverages(5))
+
+
+# complexidade: o for (100) se torna desprezivel quanto maior o n
+# complexidade de tempo = O(n) pois o for (n) é a mesma para entrada e saida
+# complexidade de espaço = O(1) pois o tamanho da lista é constante, sempre 100
