@@ -38,4 +38,5 @@ print(randomAverages(5))
 
 # complexidade: o for (100) se torna desprezivel quanto maior o n
 # complexidade de tempo = O(n) pois o for (n) é a mesma para entrada e saida
-# complexidade de espaço = O(1) pois o tamanho da lista é constante, sempre 100
+# complexidade de espaço = O(1) pois o tamanho da lista é constante,
+# no caso sempre 100
