@@ -1,3 +1,6 @@
+from random import shuffle
+
+
 def merge_sort(numbers, start=0, end=None):
     if end is None:
         end = len(numbers)
@@ -31,6 +34,14 @@ def merge(numbers, start, mid, end):
             right_index = right_index + 1
 
 
-numbers = [6, 5, 3, 1, 8, 7, 2, 4]
+def sort_random(size):
+    ordenados = list(range(size))
+    aleatorios = ordenados[:]  # copia dos ordenados
+    shuffle(aleatorios)  # embaralha eles
+    return aleatorios
+
+
+# numbers = [6, 5, 3, 1, 8, 7, 2, 4]
+numbers = list(sort_random(100))
 merge_sort(numbers, 0, len(numbers))
 print(numbers)
